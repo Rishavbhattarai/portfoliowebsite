@@ -1,0 +1,28 @@
+.code-container {
+  /* Base styles for the code block */
+  white-space: pre-wrap;  /* Preserve line breaks */
+  background-color: #0a0879b6; /* Light background color */
+  padding: 1em; /* Add some padding */
+  border-radius: 4px; /* Rounded corners */
+  font-family: monospace, Consolas, "Courier New", Courier, sans-serif; /* Monospace font for code */
+  line-height: 1.5; /* Adjust line spacing for better readability */
+}
+
+.code-container code {
+  /* Styles specific to the code content */
+  display: block; /* Each line treated as a block for better styling */
+  padding-left: 20px; /* Indent code lines */
+  margin-bottom: 3px; /* Add some space between lines */
+  position: relative; /* Enable line number positioning */
+}
+
+.code-container code:before {
+  /* Style for line numbers (optional) */
+  content: counter(line); /* Generate line numbers */
+  counter-increment: line; /* Increment line counter for each line */
+  display: inline-block; /* Display line numbers inline */
+  color: #999; /* Gray color for line numbers */
+  width: 20px; /* Adjust width for line numbers */
+  text-align: right; /* Right-align line numbers */
+  margin-right: 5px; /* Add spacing between line numbers and code */
+}
